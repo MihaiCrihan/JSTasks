@@ -1,6 +1,3 @@
-let ucFirst = (str) => {
-    let capitalized = str.slice(0,1).toUpperCase() + str.slice(1)
-    console.log(capitalized)
-}
+let ucFirst = (str) => str.slice(0,1).toUpperCase() + str.slice(1)
 
 ucFirst('vlad are papug')
