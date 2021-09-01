@@ -5,7 +5,7 @@ const c = 1220;
 let max = a;
 let min = a;
 
-// hz cum intr-un rind
+// TODO intr-un rind
 
 if (b > max) {
     max = b;
