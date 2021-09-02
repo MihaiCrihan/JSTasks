@@ -44,3 +44,6 @@ numbers.forEach(item => console.log(item));
 console.log("-----------6---------");
 
 numbers.map(value => console.log(value))
+
+console.log("-----------7---------");
+
