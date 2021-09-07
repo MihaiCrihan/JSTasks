@@ -1,9 +1,9 @@
-const number = prompt('Insert an number');
+const number = prompt('Insert a number');
 if (number > 0 ){
     alert(1)
-} else if (number < 0){
+} else if (number < 0) {
     alert(-1)
-} else if (number == 0){ //TODO de facut normal
+} else if (Number(number) === 0) {
     alert(0)
 } else {
     alert("Error")

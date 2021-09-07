@@ -2,7 +2,7 @@
 
 const dividers = (number) => {
     for (let i = 1; i <= (number / 2); i++){
-        if (!(number % i)) {   // !(number % i) am facut asa dar apare si 0 dar impartirea la 0 nu are sens
+        if (!(number % i)) {
             console.log(i)
         }
     }

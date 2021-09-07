@@ -19,19 +19,32 @@ const studentsInfo = [
         marks: [10, 7, 9, 3, 8],
     },
     {
-        name: "Tu",
-        marks: [5, 17, 9, 10, 8],
+        name: "Igoras",
+        marks: [5, 1, 4, 0, 2],
     }
 ]
 
 const average = () => {
-    let average = 0;
-    for (const studentsInfoElement of studentsInfo) {
-        for (let i = 0; i <= studentsInfoElement.marks.length; i++ ) {
-            average += studentsInfoElement.marks[i]
-            console.log(average)
+    for (const student of studentsInfo) {
+        console.log(student.marks.reduce((total, current) => total + current)/student.marks.length);
+    }
+}
+
+const studentsWithNegativeMarks = () => {
+    for (const student of studentsInfo) {
+        const markAverage = student.marks.reduce((total, current) => total + current)/student.marks.length;
+        if (markAverage < 5) {
+            console.log(student.name + " = " + markAverage );
         }
     }
 }
+
+const studentsWithMinMAxMArks = () => {
+    console.log(Math.max.apply(Math,studentsInfo.map(student => student.marks.reduce((a, b) => a + b) / student.marks.length)));
+    console.log(Math.min.apply(Math,studentsInfo.map(student => student.marks.reduce((a, b) => a + b) / student.marks.length)));
+}
+
 average();
+studentsWithNegativeMarks();
+studentsWithMinMAxMArks();
 
