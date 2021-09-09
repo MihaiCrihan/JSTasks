@@ -50,7 +50,7 @@ const studentsWithMinMaxMarks = (studentsInfo) => {
         mark: 0
     }
     for (const student in studentsInfo) {
-        if (studentsInfo.hasOwnProperty(student)) {  // todo IDE vrea asa  cu if hasOwnProperty(student) nu prea am inteles de ce
+        if (studentsInfo.hasOwnProperty(student)) { 
             const min = Math.min(...studentsInfo[student].marks);
             const max = Math.max(...studentsInfo[student].marks);
             if (min < minMark.mark) {
