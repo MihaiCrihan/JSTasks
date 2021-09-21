@@ -9,9 +9,9 @@ const weekDays = {
 }
 
 const changeKeyValueOrder = (obj) => {
-    for (const objKey in obj) {
-        console.log(obj)
+    for (let value in Object.keys(obj)) {
+        console.log(value)
     }
 }
-
 changeKeyValueOrder(weekDays)
+
