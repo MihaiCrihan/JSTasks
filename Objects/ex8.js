@@ -12,7 +12,9 @@ const translation = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 const translate = () => {
     let i = 0;
     for (const argumentsKey in weekDays) {
-        weekDays[argumentsKey] = translation[i++]
+        if (weekDays.hasOwnProperty(argumentsKey)) {
+            weekDays[argumentsKey] = translation[i++]
+        }
     }
 }
 translate();
