@@ -1,4 +1,3 @@
-// попробуйте расположить мяч в каждом из углов поля
 document.addEventListener('DOMContentLoaded', () => {
     const centerBall = () => {
         const ball = document.getElementById("ball");
