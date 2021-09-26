@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<div>
+    <input type="text" id="input">
+    <button id="addToList">Add to list</button>
+    <ol id="orderedList"></ol>
+</div>
+</body>
+<style>
+    #addToList[disabled ~= "true"] {
+        color: gray;
+    }
+    * {
+        background: #2d2c2c;
+        color: #fff;
+    }
+</style>
+</html>
