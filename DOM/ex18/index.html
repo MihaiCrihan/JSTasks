@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="block1">
+        <div id="player"></div>
+    </div>
+    <div class="block2" id="block2">
+        <div id="player2"></div>
+    </div>
+</div>
+</body>
+<style>
+    * {
+        color: #fff;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 0;
+        background: #2d2c2c;
+        padding: 0;
+    }
+
+    #player {
+        background: pink;
+        position: fixed;
+        height: 100px;
+        width: 60px;
+        top: 0;
+        left: 0;
+    }
+
+    .block2 {
+        position: relative;
+    }
+
+    #player2 {
+        background: blue;
+        position: fixed;
+        height: 100px;
+        width: 60px;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+    .block1,.block2 {
+        width: 50%;
+        height: 100%;
+        border: 1px solid white;
+        border-collapse: collapse;
+    }
+</style>
+</html>
