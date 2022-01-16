@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div style="display: flex">
+        <table>
+            <tbody id="tableBody">
+            <tr>
+                <td>Name</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Leon</td>
+                <td>
+                    <button class="closeBtn">X</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Messi</td>
+                <td>
+                    <button class="closeBtn">X</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="display: flex">
+            <input type="text" id="input">
+            <button id="add" class="add"> Add </button>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    * {
+        color: #fff;
+        overflow: hidden;
+    }
+
+    body {
+        margin: 0;
+        background: #2d2c2c;
+        padding: 50px;
+    }
+
+    table,
+    table tr td {
+        border: thin solid white;
+        border-collapse: collapse;
+    }
+
+    table tr td {
+        min-width: 150px;
+        padding: 4px;
+    }
+
+    input {
+        border: 1px solid white;
+        margin-left: 50px;
+    }
+    input,
+    input * {
+        background: #2d2c2c;
+        outline: none;
+    }
+
+    .add {
+        background: green;
+    }
+
+    .closeBtn {
+        background: darkred;
+    }
+
+</style>
+</html>
