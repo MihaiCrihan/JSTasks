@@ -1,21 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tableBody = document.getElementById("tableBody")
-    const input = document.getElementById("input")
-    const addBtn = document.getElementById("add")
+    const tableBody = document.getElementById("tableBody");
+    const input = document.getElementById("input");
+    const addBtn = document.getElementById("add");
 
+    input.focus();
     addBtn.addEventListener("click", () => {
-        tableBody.innerHTML += ` <tr> <td>${input.value}</td> <td> <button class=closeBtn>X</button></td></tr>`;
+        if (input.value) {
+            tableBody.innerHTML += ` <tr> <td>${input.value}</td> <td> <button class=closeBtn>X</button></td></tr>`;
+            input.value = '';
+        }
+        input.focus();
     });
 
-    const length = tableBody.children.length;
-
     document.body.addEventListener("DOMSubtreeModified", () => {
-    const closeBtn = document.querySelectorAll(".closeBtn")
-        console.log(closeBtn)
+        const closeBtn = document.querySelectorAll(".closeBtn");
         for (const closeBtnElement of closeBtn) {
             closeBtnElement.addEventListener("click", () => {
-                closeBtnElement.parentElement.parentElement.remove()
-                console.log(closeBtnElement.parentElement.parentElement);
+                closeBtnElement.parentElement.parentElement.remove();
             })
         }
     })
